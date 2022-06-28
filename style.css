@@ -26,7 +26,8 @@ body {
 .wrapper,
 .about,
 .tech,
-.courses {
+.courses,
+.courses-cards {
   max-width: 1300px;
   margin: auto;
 }
@@ -116,5 +117,34 @@ nav ul li {
 /***********SECAO CURSOS***********/
 
 .courses {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   background-color: var(--primary-color);
+}
+
+.courses h2 {
+  text-align: center;
+  padding-top: 30px;
+
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: white;
+}
+
+.courses-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 30px;
+  margin: 50px;
+  border-radius: 6px;
+  
+  width: 260px;
+  min-height: 300px;
+
+  background-color: white;
 }
