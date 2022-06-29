@@ -117,9 +117,6 @@ nav ul li {
 /***********SECAO CURSOS***********/
 
 .courses {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   background-color: var(--primary-color);
 }
 
@@ -136,15 +133,23 @@ nav ul li {
 
 .courses-cards {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   padding: 30px;
-  margin: 50px;
-  border-radius: 6px;
-  
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 260px;
   min-height: 300px;
+  
+  padding: 30px;
+  margin: 40px;
+  border-radius: 6px;
 
   background-color: white;
 }
